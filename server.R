@@ -7,15 +7,20 @@
 #    http://shiny.rstudio.com/
 #
 
-library(shiny)
-library(shinydashboard)
-library(ggplot2)
-library(ggtree)
-library(showtext)
-library(RColorBrewer)
-library(magrittr)
-library(tidytree)
-library(plotly)
+ispacman <- require("pacman", character.only=TRUE) 
+if(!ispacman)
+    install.packages("pacman")
+
+pacman::p_load(shiny)
+pacman::p_load(shinydashboard)
+pacman::p_load(ggplot2)
+pacman::p_load(ggtree)
+pacman::p_load(showtext)
+pacman::p_load(RColorBrewer)
+pacman::p_load(magrittr)
+pacman::p_load(tidytree)
+pacman::p_load(plotly)
+
 shinyServer(function(input, output) {
    
 

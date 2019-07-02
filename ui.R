@@ -1,6 +1,10 @@
-library(shiny)
-library(shinydashboard)
-library(plotly)
+ispacman <- require("pacman", character.only=TRUE) 
+if(!ispacman)
+    install.packages("pacman")
+
+pacman::p_load(shiny)
+pacman::p_load(shinydashboard)
+pacman::p_load(plotly)
 
 
 box1 <-   box(width = 4,
