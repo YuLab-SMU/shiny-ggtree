@@ -57,7 +57,8 @@ box2 <-   box(width = 4,
  
 sidebar <- dashboardSidebar(
   fileInput('file1', 'Choose File',
-              accept=c('text/csv', 'text/comma-separated-values,text/plain')),
+              accept=c('text/csv', 'text/comma-separated-values,text/plain',
+					   '.nwk', '.phy', '.jplace', '.jtree', '.tree', '.tre')),
   checkboxInput("node_label2", "node_label:", FALSE),
   #checkboxInput("Collapsing_Clade1", "Collapsing_Clade", FALSE),
   #textInput("Collapsing_Clade","Collapsing_Clade：", value = "none"),
